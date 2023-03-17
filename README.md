@@ -1,12 +1,13 @@
 # MechaCar_Statistical_Analysis
 
 ## Overview
+In this analysis we looked at data from AutosRUs’ newest prototype, the MechaCar, which is suffering from production issues that are impeding their progress.  Using linear regression analysis, summary statistics and t-tests in R-Studio with the data provided we aim to reveal insights that may help the manufacturing team.
 
 ### Resources
 
 - Software:
     - RStudio(version 2022.12.0+353)
-- Starting Data
+- Starting Data:
     - MechaCar MPG Data
         - [deliverables/deliverable_resources/MechaCar_mpg.csv](deliverables/deliverable_resources/MechaCar_mpg.csv)
     - Suspension Coil Data
@@ -22,10 +23,10 @@
 ## Visualizations and Analysis 
 
 ### Part 1: Linear Regression to Predict MPG
-
-1.    Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-2.    Is the slope of the linear model considered to be zero? Why or why not?
-3.    Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+#### Summary
+- The vehicle weight and ground clearance have the weakest relation to the variance. 
+- The slope of the linear model is not considered to be zero. The p-value is significantly less then the .05 significant level. 
+- The linear model predicts mpg prototypes effectively because the multiple r-squared number is 0.71, therefor most of the variances can be explained by the mpg. 
 
 ### Linear Regression 
 - [deliverables/deliverable_images/linear_regression.png](deliverables/deliverable_images/linear_regression.png)
@@ -40,8 +41,8 @@
 
 
 ### Part 2: Create Visualizations for the Trip Analysis
-
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+#### Summary
+- All together the lots meet the specifications. Lot 1 and 2 are very similar and are within the design specifications. Lot 3 exceeds the specifications, its variance exceeds specifications. 
 
 ### Total Summary on Suspension Coil Data
 - [deliverables/deliverable_images/total_summary.png](deliverables/deliverable_images/total_summary.png)
@@ -58,12 +59,11 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 ### Part 3: T-Tests on Suspension Coils
 
-Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
-
 ### T-Test on Suspension Coil Data
 - [deliverables/deliverable_images/t_test_coil_data.png](deliverables/deliverable_images/t_test_coil_data.png)
 
 ![deliverables/deliverable_images/t_test_coil_data.png](deliverables/deliverable_images/t_test_coil_data.png)
+- T-test for all lots vs. mean of 1500 PSI - no statistical difference.
 
 ### Lot 1 Data
 - [deliverables/deliverable_images/lot_1.png](deliverables/deliverable_images/lot_1.png)
@@ -74,6 +74,7 @@ Briefly summarize your interpretation and findings for the t-test results. Inclu
 - [deliverables/deliverable_images/t_test_lot_1.png](deliverables/deliverable_images/t_test_lot_1.png)
 
 ![deliverables/deliverable_images/t_test_lot_1.png](deliverables/deliverable_images/t_test_lot_1.png)
+- T-test for lot 1 vs. mean of 1500 PSI - no statistical difference.
 
 ### Lot 2 Data
 - [deliverables/deliverable_images/lot_2.png](deliverables/deliverable_images/lot_2.png)
@@ -84,6 +85,7 @@ Briefly summarize your interpretation and findings for the t-test results. Inclu
 - [deliverables/deliverable_images/t_test_lot_2.png](deliverables/deliverable_images/t_test_lot_2.png)
 
 ![deliverables/deliverable_images/t_test_lot_2.png](deliverables/deliverable_images/t_test_lot_2.png)
+- T-test for lot 3 vs. mean of 1500 PSI - no statistical difference.
 
 ### Lot 3 Data
 - [deliverables/deliverable_images/lot_3.png](deliverables/deliverable_images/lot_3.png)
@@ -94,13 +96,7 @@ Briefly summarize your interpretation and findings for the t-test results. Inclu
 - [deliverables/deliverable_images/t_test_lot_3.png](deliverables/deliverable_images/t_test_lot_3.png)
 
 ![deliverables/deliverable_images/t_test_lot_3.png](deliverables/deliverable_images/t_test_lot_3.png)
+- T-test for lot 3 vs. mean of 1500 PSI - yes, a statistical difference.
 
 ## Part 4: Study Design: MechaCar vs Competition.
-
-1. Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-2. In your description, address the following questions:
-    a. What metric or metrics are you going to test?
-    b. What is the null hypothesis or alternative hypothesis?
-    c. What statistical test would you use to test the hypothesis? And why?
-    d. What data is needed to run the statistical test?
-
+Cost is one of the most important things to consumers, therefor the price of the car and the expenses to keep it running are going to play a huge role in consumer interest. The null hypothesis would be “There is no significant difference in cost between MechaCar and its competition.” We would use a one sample T-Test to test the null hypothesis using the average car cost as the variable we are testing. The data we would need to run this test is the car prices. 
