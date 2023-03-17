@@ -63,7 +63,7 @@ In this analysis we looked at data from AutosRUs’ newest prototype, the MechaC
 - [deliverables/deliverable_images/t_test_coil_data.png](deliverables/deliverable_images/t_test_coil_data.png)
 
 ![deliverables/deliverable_images/t_test_coil_data.png](deliverables/deliverable_images/t_test_coil_data.png)
-- T-test for all lots vs. mean of 1500 PSI - no statistical difference.
+- There is no statistical difference for all lots T-test of all lots vs. mean of 1500 PSI.
 
 #### Lot 1 Data
 - [deliverables/deliverable_images/lot_1.png](deliverables/deliverable_images/lot_1.png)
@@ -74,7 +74,7 @@ In this analysis we looked at data from AutosRUs’ newest prototype, the MechaC
 - [deliverables/deliverable_images/t_test_lot_1.png](deliverables/deliverable_images/t_test_lot_1.png)
 
 ![deliverables/deliverable_images/t_test_lot_1.png](deliverables/deliverable_images/t_test_lot_1.png)
-- T-test for lot 1 vs. mean of 1500 PSI - no statistical difference.
+- There is no statistical difference for lot one's T-test of lot 1 vs. mean of 1500 PSI.
 
 #### Lot 2 Data
 - [deliverables/deliverable_images/lot_2.png](deliverables/deliverable_images/lot_2.png)
@@ -85,7 +85,7 @@ In this analysis we looked at data from AutosRUs’ newest prototype, the MechaC
 - [deliverables/deliverable_images/t_test_lot_2.png](deliverables/deliverable_images/t_test_lot_2.png)
 
 ![deliverables/deliverable_images/t_test_lot_2.png](deliverables/deliverable_images/t_test_lot_2.png)
-- T-test for lot 2 vs. mean of 1500 PSI - no statistical difference.
+- There is no statistical difference for lot two's T-test of lot 2 vs. mean of 1500 PSI.
 
 #### Lot 3 Data
 - [deliverables/deliverable_images/lot_3.png](deliverables/deliverable_images/lot_3.png)
@@ -96,7 +96,7 @@ In this analysis we looked at data from AutosRUs’ newest prototype, the MechaC
 - [deliverables/deliverable_images/t_test_lot_3.png](deliverables/deliverable_images/t_test_lot_3.png)
 
 ![deliverables/deliverable_images/t_test_lot_3.png](deliverables/deliverable_images/t_test_lot_3.png)
-- T-test for lot 3 vs. mean of 1500 PSI - yes, a statistical difference.
+- There is a statistical difference for lot three's T-test of lot 3 vs. mean of 1500 PSI.
 
 ### Part 4: Study Design: MechaCar vs Competition.
 Cost is one of the most important things to consumers, therefor the price of the car and the expenses to keep it running are going to play a huge role in consumer interest. The null hypothesis would be “There is no significant difference in cost between MechaCar and its competition.” We would use a one sample T-Test to test the null hypothesis using the average car cost as the variable we are testing. The data we would need to run this test is the car prices. 
