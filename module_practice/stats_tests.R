@@ -13,7 +13,7 @@ sample_table <- used_car_data %>% sample_n(50) #randomly sample 50 data points
 plt <- ggplot(sample_table,aes(x=log10(Miles_Driven))) #import dataset into ggplot2
 plt + geom_density() #visualize distribution using density plot
 
-#t-test 
+#t-test
 t.test(log10(sample_table$Miles_Driven),mu=mean(log10(used_car_data$Miles_Driven))) #compare sample versus population means
 
 # 2 sample t-test
@@ -60,7 +60,7 @@ cor(used_matrix)
 # shows strong correlation between selling price versus present price
 
 # linear regression
-lm(qsec ~ hp,mtcars) #create linear model
+lm(qsec ~ hp,mtcars)
 summary(lm(qsec~hp,mtcars)) #summarize linear model
 
 model <- lm(qsec ~ hp,mtcars) #create linear model
