@@ -7,7 +7,7 @@
 - Software:
     - RStudio(version 2022.12.0+353)
 - Starting Data
-    - MechCar MPG Data
+    - MechaCar MPG Data
         - [deliverables/deliverable_resources/MechaCar_mpg.csv](deliverables/deliverable_resources/MechaCar_mpg.csv)
     - Suspension Coil Data
         - [deliverables/deliverable_resources/Suspension_Coil.csv](deliverables/deliverable_resources/Suspension_Coil.csv)
