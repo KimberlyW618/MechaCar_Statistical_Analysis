@@ -1,10 +1,6 @@
 ############     MechaCarChallenge.RScript     ###########
 
-require(pacman)
-pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes, ggvis, 
-               httr, lubridate, plotly, rio, rmarkdown, shiny, 
-               stringr, tidyr)
-library(datasets)
+library(dplyr)
 
 ############     Part 1: Linear Regression to Predict MPG     ###########
 
@@ -19,10 +15,6 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle +
 #summary to ge the p-value and the r-squared value
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
              ground_clearance + AWD, mecha_data))
-
-# p-value = 5.35e-11
-# Multiple R-squared = 0.7149
-# Adjusted R-squared = 0.6825 
 
 ##### See the ReadMe for written analysis
 
@@ -47,6 +39,7 @@ lot_summary <- coil_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean = me
                                                                        .groups = 'keep')
 lot_summary
 
+##### See the ReadMe for written analysis
 
 ############     Part 3: T-Tests on Suspension Coils     ###########
 
@@ -64,3 +57,4 @@ t.test(lot_1$PSI, mu=1500)
 t.test(lot_2$PSI, mu=1500) 
 t.test(lot_3$PSI, mu=1500) 
 
+##### See the ReadMe for written analysis
